@@ -18,6 +18,7 @@ export class LoginService {
             let logoutUrl = data.logoutUrl;
             // if Keycloak, uri has protocol/openid-connect/token
             if (logoutUrl.indexOf('/protocol') > -1) {
+                // append the /login as where you want to redirect at the time of login
                 logoutUrl = logoutUrl + '?redirect_uri=' + window.location.origin + '/' + 'login';
             } else {
                 // Okta

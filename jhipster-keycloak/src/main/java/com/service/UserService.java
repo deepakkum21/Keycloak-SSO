@@ -139,6 +139,7 @@ public class UserService {
     public UserDTO getUserFromAuthentication(OAuth2Authentication authentication) {
         Object oauth2AuthenticationDetails = authentication.getDetails(); // should be an OAuth2AuthenticationDetails
         Map<String, Object> details = (Map<String, Object>) authentication.getUserAuthentication().getDetails();
+        // Got the mapper with the details of role
         System.out.println("mapper" + details);
         User user = getUser(details);
         Set<Authority> userAuthorities = extractAuthorities(authentication, details); 

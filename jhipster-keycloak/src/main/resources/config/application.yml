@@ -94,6 +94,9 @@ spring:
 # export SECURITY_OAUTH2_CLIENT_CLIENT_ID="jhipster"
 # export SECURITY_OAUTH2_CLIENT_CLIENT_SECRET="38561a05"
 # ===================================================================
+
+
+# give the name of the realm created in access-token-uri, user-authorization-uri, user-info-uri
 security:
     oauth2:
         client:
