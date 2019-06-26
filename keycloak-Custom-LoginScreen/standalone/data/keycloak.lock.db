@@ -1,0 +1,6 @@
+#FileLock
+#Tue Jun 25 18:02:25 IST 2019
+hostName=STPLDEV57.sysbiz.org
+id=16b8e9f6540a317e7bad6c6980162232984b1953244
+method=file
+server=192.168.99.1\:62240
